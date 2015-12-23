@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+## The first function, makeVector creates a special "vector", which is really a list containing a function to
+## get the value of the matrix
+## set the value of the matrix
+## set the value of the inverse matrix
+## get the value of the inverse matrix
+
 
 makeCacheMatrix <- function(x = matrix()) {
         s <- NULL
@@ -17,8 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
     
 
-## Write a short comment describing this function
-
+## if the inverse matrix has already calculated, it will return the cache data
+## elsa it will calculate the inverse matrix and store it in cache via the setinverse function
         
 cacheSolve <- function(x, ...) {
         s <- x$getinverse()
